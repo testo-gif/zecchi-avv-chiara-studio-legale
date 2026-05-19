@@ -100,6 +100,17 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
 .sticky-call{background:#1a5c2a}
 .sticky-wa{background:#25D366}
 
+/* FAQ */
+.faq-section{background:var(--cream)}
+.faq-list{max-width:780px;margin:0 auto}
+.faq-item{border:1px solid #e8e4d8;border-radius:8px;margin-bottom:12px;overflow:hidden;background:#fff}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:20px 24px;font-size:15px;font-weight:500;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:'Inter',sans-serif}
+.faq-q:hover{background:rgba(201,168,76,0.06)}
+.faq-q .faq-icon{color:var(--gold);font-size:18px;flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{display:none;padding:0 24px 20px;font-size:14px;color:#555;line-height:1.7}
+.faq-item.open .faq-a{display:block}
+
 /* PRIVACY */
 .privacy-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center;padding:16px}
 .privacy-modal.open{display:flex}
@@ -130,7 +141,7 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
   <div class="hero-content">
     <div class="hero-badge">Avvocato · Bologna</div>
     <h1>Zecchi Avv. Chiara Studio Legale</h1>
-    <p class="hero-sub">⭐ 5 su Google · 3 recensioni</p>
+    <p class="hero-sub">Professionista a Bologna</p>
     <p class="hero-addr">📍 Via Filippo Turati,  8, 40134 Bologna</p>
     <a href="tel:+39 051 271045" class="btn-primary">📞 Chiama ora</a>
   </div>
@@ -145,7 +156,7 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
         <p style="margin-bottom:0">Lo studio legale <strong>Zecchi Avv. Chiara Studio Legale</strong> opera a Bologna con esperienza nella consulenza e nell'assistenza legale. Offriamo un servizio su misura, attento alle esigenze del cliente e orientato al risultato.</p>
         <p>La nostra priorità è accompagnare ogni cliente con competenza e dedizione, garantendo chiarezza, trasparenza e riservatezza in ogni fase del percorso.</p>
         <div class="about-stats">
-          <div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Valutazione Google</div></div>
+          
           <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">Recensioni</div></div>
           <div class="stat-box"><div class="stat-num">100%</div><div class="stat-label">Dedizione</div></div>
           <div class="stat-box"><div class="stat-num">Bologna</div><div class="stat-label">Sede</div></div>
@@ -166,71 +177,27 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
   </div>
 </section>
 
-<section class="section reviews-section">
+
+
+<section class="section faq-section">
   <div class="container">
-    <h2 class="section-title">Cosa dicono i clienti</h2>
-    <div class="rating-summary">
-      <div class="big-rating">5</div>
-      <div>
-        <span style="color:#c9a84c;font-size:22px">★★★★★<span style="color:#ccc"></span></span>
-        <div style="color:#666;font-size:14px;margin-top:4px">Basato su 3 recensioni Google</div>
-      </div>
-    </div>
-    <div class="reviews-grid" id="revGrid">
-      <div class="rev-card">
-  <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">
-    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVtqL1bZrQx9fEvnxUafPAPVwDqT6VsKQnAhP89co61btosGzM=s128-c0x00000000-cc-rp-mo" style="width:40px;height:40px;border-radius:50%;object-fit:cover">
-    <div>
-      <div style="font-weight:600;font-size:14px;color:#1a2744">Cristina Guerra</div>
-      <div style="font-size:12px;color:#666">5 anni fa</div>
-    </div>
-  </div>
-  <div style="color:#c9a84c;font-size:16px;margin-bottom:6px">★★★★★</div>
-  <p style="font-size:14px;color:#444;line-height:1.5;margin:0">È da 20 anni il mio legale di riferimento, sia per questioni familiari che professionali. È una professionista competente, tosta e molto equilibrata</p>
-  <div style="position:absolute;bottom:12px;right:12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" style="flex-shrink:0">
-<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-<path fill="none" d="M0 0h48v48H0z"/></svg></div>
-</div><div class="rev-card">
-  <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">
-    <img src="https://lh3.googleusercontent.com/a/ACg8ocItDHPuK2qrjQWGTkmidQLKPswgSV2tK-5lhbr7L0u6KxfOUQ=s128-c0x00000000-cc-rp-mo" style="width:40px;height:40px;border-radius:50%;object-fit:cover">
-    <div>
-      <div style="font-weight:600;font-size:14px;color:#1a2744">Robby Lorici</div>
-      <div style="font-size:12px;color:#666">5 anni fa</div>
-    </div>
-  </div>
-  <div style="color:#c9a84c;font-size:16px;margin-bottom:6px">★★★★★</div>
-  <p style="font-size:14px;color:#444;line-height:1.5;margin:0">Assolutamente impeccabile per professionalità e competenza.</p>
-  <div style="position:absolute;bottom:12px;right:12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" style="flex-shrink:0">
-<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-<path fill="none" d="M0 0h48v48H0z"/></svg></div>
-</div><div class="rev-card">
-  <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">
-    <img src="https://lh3.googleusercontent.com/a/ACg8ocKRRIGmyqrSwx8eopValfvjn42PkxYVmykkeHyeH1dIyM1PxA=s128-c0x00000000-cc-rp-mo" style="width:40px;height:40px;border-radius:50%;object-fit:cover">
-    <div>
-      <div style="font-weight:600;font-size:14px;color:#1a2744">Vilma Zini</div>
-      <div style="font-size:12px;color:#666">5 anni fa</div>
-    </div>
-  </div>
-  <div style="color:#c9a84c;font-size:16px;margin-bottom:6px">★★★★★</div>
-  <p style="font-size:14px;color:#444;line-height:1.5;margin:0"></p>
-  <div style="position:absolute;bottom:12px;right:12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" style="flex-shrink:0">
-<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-<path fill="none" d="M0 0h48v48H0z"/></svg></div>
-</div>
-    </div>
-    <div class="rev-nav">
-      <button onclick="scrollRevs(-1)" class="rev-btn">&#8592;</button>
-      <button onclick="scrollRevs(1)" class="rev-btn">&#8594;</button>
-    </div>
+    <h2 class="section-title">Domande frequenti</h2>
+    <div class="faq-list"><div class="faq-item">
+  <button class="faq-q" onclick="toggleFaq(this)"><span>Come posso fissare un appuntamento?</span><span class="faq-icon">+</span></button>
+  <div class="faq-a">Puoi contattarci tramite telefono o WhatsApp per fissare un primo colloquio conoscitivo. Risponderemo nel più breve tempo possibile.</div>
+</div><div class="faq-item">
+  <button class="faq-q" onclick="toggleFaq(this)"><span>Quali aree del diritto trattate?</span><span class="faq-icon">+</span></button>
+  <div class="faq-a">Lo studio opera principalmente in diritto civile, diritto del lavoro, diritto penale, diritto commerciale e recupero crediti.</div>
+</div><div class="faq-item">
+  <button class="faq-q" onclick="toggleFaq(this)"><span>Quanto costa una consulenza legale?</span><span class="faq-icon">+</span></button>
+  <div class="faq-a">Il costo varia in base alla complessità del caso e al tipo di prestazione richiesta. Il primo colloquio serve a valutare la situazione e fornire un preventivo chiaro.</div>
+</div><div class="faq-item">
+  <button class="faq-q" onclick="toggleFaq(this)"><span>È possibile ricevere assistenza anche a distanza?</span><span class="faq-icon">+</span></button>
+  <div class="faq-a">Sì, è possibile concordare consulenze in videochiamata o per via telematica, per chi non può recarsi fisicamente in studio.</div>
+</div><div class="faq-item">
+  <button class="faq-q" onclick="toggleFaq(this)"><span>Come funziona la prima consulenza?</span><span class="faq-icon">+</span></button>
+  <div class="faq-a">Il primo incontro è un colloquio in cui illustrate il vostro problema e ricevete una valutazione professionale iniziale, senza impegno.</div>
+</div></div>
   </div>
 </section>
 
@@ -291,6 +258,13 @@ L.marker([44.494514,11.323717],{icon}).addTo(map).bindPopup('<b>Zecchi Avv. Chia
 
 function scrollRevs(dir){
   document.getElementById('revGrid').scrollBy({left:dir*340,behavior:'smooth'});
+}
+
+function toggleFaq(btn){
+  var item=btn.closest('.faq-item');
+  var isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');});
+  if(!isOpen)item.classList.add('open');
 }
 </script>
 </body></html>
